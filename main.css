@@ -1,0 +1,166 @@
+
+:root {
+    --main-bg-color: rgb(245, 245, 245);
+  }
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.backgroundtest {
+    width: 100%;
+    background-image: url(./assets/hero_background.avif);
+    background-repeat: no-repeat;
+}
+
+.placeholder {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    width: 100%;
+    opacity: 1;
+}
+
+.wrap {
+    width: 80%;
+    margin: auto;
+
+    position: relative;
+
+}
+
+/* #region nav */
+
+.main-nav {
+    background-repeat: no-repeat;
+    width: 30%;
+
+    position: sticky;
+    top: 80px;
+    left: 10%;
+    margin-top: -80px;
+    z-index: 99;
+    
+}
+
+.main-nav > ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.main-nav > ul > li > a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.main-nav > ul > li > a:target {
+    padding-bottom: 10px;
+    border-bottom: 2px solid orange;
+
+}
+/* #endregion */
+
+/*#region hero */
+
+.hero {
+    /* background: url(./assets/hero_background.avif); */
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 90vh;
+
+    position: relative;
+    
+}
+
+.hero-content {
+    position: absolute;
+    top: 45%;
+    left: 0;
+
+    width: 40%;
+
+    color: white;
+
+}
+
+.hero-content > .hero-title {
+    font-size: 3rem;
+    font-weight: 100;
+    letter-spacing: 1px;
+}
+
+.hero-content > .hero-text {
+    padding: 20px 0;
+}
+
+.hero-content > .hero-icon {
+    font-size: 3rem;
+    margin-left: 100px;
+}
+
+/* #endregion */
+
+
+
+.arrow-icons {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+
+    display: flex;
+}
+
+.arrow-icons div {
+    font-size: 2rem;
+    color: white;
+    border: 2px solid white;
+    border-radius: 100px;
+    padding: 0 12px;
+    margin: 4px;
+}
+.arrow-icons div:last-child {
+    font-size: 2rem;
+    color: orange;
+    border: 2px solid orange;
+    border-radius: 100px;
+    padding: 0 12px;
+}
+
+
+.orange-container {
+    display: grid;
+    grid-template-columns: 30fr 70fr;
+    
+    
+    /* background-color: orange;
+    position: absolute;
+    bottom: -50%;
+    left: 30%;
+    width: 70%;
+
+    color: white;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr; */
+}
+
+.orange-container > .orange-content {
+    padding: 40px;
+}
+
+.orange-content > .orange-text {
+    padding-top: 40px;
+}
+
+
+
