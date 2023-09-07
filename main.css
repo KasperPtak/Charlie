@@ -1,6 +1,9 @@
 
 :root {
     --main-bg-color: rgb(245, 245, 245);
+    --orange: #F06421;
+
+    --heading-font-size: 2.5rem;
   }
 
 * {
@@ -11,8 +14,27 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.backgroundtest {
+.img-fluid {
     width: 100%;
+    height: auto;
+}
+
+.container {
+    box-sizing: content-box;
+    padding: 50px;   
+}
+
+.heading {
+    font-size: var(--heading-font-size);
+    margin-bottom: 20px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+
+.backgroundtest {
     background-image: url(./assets/hero_background.avif);
     background-repeat: no-repeat;
 }
@@ -63,7 +85,7 @@
 
 .main-nav > ul > li > a:target {
     padding-bottom: 10px;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid var(--orange);
 
 }
 /* #endregion */
@@ -76,7 +98,7 @@
     background-repeat: no-repeat;
     background-size: cover;
 
-    height: 90vh;
+    height: 100vh;
 
     position: relative;
     
@@ -94,7 +116,7 @@
 }
 
 .hero-content > .hero-title {
-    font-size: 3rem;
+    font-size: var(--heading-font-size);
     font-weight: 100;
     letter-spacing: 1px;
 }
@@ -110,57 +132,55 @@
 
 /* #endregion */
 
-
-
-.arrow-icons {
-    position: absolute;
-    bottom: 20%;
-    left: 0;
-
-    display: flex;
-}
-
-.arrow-icons div {
-    font-size: 2rem;
-    color: white;
-    border: 2px solid white;
-    border-radius: 100px;
-    padding: 0 12px;
-    margin: 4px;
-}
-.arrow-icons div:last-child {
-    font-size: 2rem;
-    color: orange;
-    border: 2px solid orange;
-    border-radius: 100px;
-    padding: 0 12px;
-}
-
+/* #region orange content */
 
 .orange-container {
     display: grid;
-    grid-template-columns: 30fr 70fr;
-    
-    
-    /* background-color: orange;
-    position: absolute;
-    bottom: -50%;
-    left: 30%;
-    width: 70%;
+    grid-template-columns: 3fr 7fr;   
 
-    color: white;
+}
 
+.arrow-icons {
+    display: flex;
+}
+
+.orange-main {
+    background-color: var(--orange);
     display: grid;
-    grid-template-columns: 1fr 1fr; */
+    grid-template-columns: 1fr 2fr;
+    
 }
 
-.orange-container > .orange-content {
-    padding: 40px;
+.orange-main-content {
+    color: white;
 }
 
-.orange-content > .orange-text {
-    padding-top: 40px;
+.orange-main > .orange-main-image {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+
+    background-color: var(--main-bg-color);
+}
+
+/* #endregion */
+
+/* #region australia (aus) */
+
+.aus-container {
+    width: 80%;
+    margin: auto;
+}
+
+.aus-container-text {
+   display: grid;
+   grid-template-columns: 100fr 77fr;
+   gap: 15px;
+}
+
+.aus-container-text p:first-child {
+   color: grey;
 }
 
 
 
+/* #endregion */
